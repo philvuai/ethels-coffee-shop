@@ -695,6 +695,7 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
     margin-top: 40px;
+    justify-items: center;
 }
 
 .instagram-post {
@@ -1094,6 +1095,28 @@ body {
     .contact-item {
         padding: 20px;
     }
+    
+    /* Instagram button mobile fixes */
+    .instagram-btn {
+        font-size: 16px !important;
+        padding: 12px 20px !important;
+        max-width: 85vw !important;
+        margin: 0 auto !important;
+        display: block !important;
+        text-align: center !important;
+        word-break: break-word;
+        line-height: 1.4;
+    }
+    
+    .instagram-cta-header {
+        margin: 25px 0 35px !important;
+        padding: 0 15px !important;
+    }
+    
+    .instagram-fallback {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1120,9 +1143,26 @@ body {
         padding: 80px 0;
     }
     
-    .gallery-grid {
+    .instagram-fallback {
         grid-template-columns: 1fr;
         gap: 15px;
+    }
+    
+    .instagram-btn {
+        font-size: 16px !important;
+        padding: 15px 25px !important;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 90vw;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+    }
+    
+    .instagram-cta-header {
+        margin: 30px 0 40px;
+        padding: 0 10px;
     }
 }
 
